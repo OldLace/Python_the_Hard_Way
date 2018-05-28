@@ -12,37 +12,37 @@ user_input = 0
 
 
 
+#to byte
 def kilobytes(user_input): 
     user_input = int(input("Enter kilobytes: "))
-#to byte
     answer1 = user_input * 1024
-    print(user_input, " kilobytes is equal to",  answer1, "bytes")
+    print(user_input, "kilobytes is equal to",  answer1, "bytes")
 
-
-def megabytes(user_input): 
 # to byte
+def megabytes(user_input): 
+    user_input = int(input("Enter amount to be converted in megabytes: "))
     answer1 = user_input * 1000000
-    print(user_input, " megabytes is equal to",  answer1, "bytes")
+    print(user_input, "megabytes is equal to",  answer1, "bytes")
 
-
-def terabytes(user_input): 
 #to byte
+def terabytes(user_input): 
+    user_input = int(input("Enter amount to be converted in terabytes: "))
     answer1 = user_input * 1000000000000
-    print(user_input, " terabytes is equal to",  answer1, "bytes")
+    print(user_input, "terabytes is equal to", answer1, "bytes")
 
-
-def tera(user_input):
 #to megabyte
+def tera(user_input):
+    user_input = int(input("Enter amount to be converted in terabytes: "))
     answer1 = user_input * 1000000
-    print(user_input, " terabytes is equal to",  answer1, "bytes")
+    print(user_input, "terabytes is equal to", answer1, "bytes")
 
 if selected_option == "1":
     kilobytes(user_input)
-elif selected_option == 2:
+elif selected_option == "2":
      megabytes(user_input)
-elif selected_option == 3:
+elif selected_option == "3":
     terabytes(user_input)
-elif selected_option == 4:
+elif selected_option == "4":
     tera(user_input)
 else:
     print("Please select from one of the options!")
