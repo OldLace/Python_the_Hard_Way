@@ -10,6 +10,14 @@ def seconds_forty_two():
 seconds_forty_two()
 
 # 2. How many miles are there in 10 kilometers? Hint: there are 1.61 kilometers in a mile
+#0.621371 * 10
+def miles_ten_km():
+    miles = 0.621371 * 10
+    print("There are", miles, "miles in 10 kilometers.")
+
+miles_ten_km()
+
+
 
 
 # 3. How much is 83 degree Fahrenheit in degree celsius   
@@ -32,18 +40,27 @@ square_root()
 # 5. write a program that returns the area of a circle with radius r= 9
 # 6. write a boolean function that returns true or false if the letter x is in a string provided by
 # the user
+
+if 
+
 # 7. write a boolean function that returns true or false if any of the letter a, e, i, o, u and in a
 # string provided by the user
 # 8. Write a boolean function that returns true if a given input is divisible by 3 or return false
 # otherwise
-def three():
-    num = input("Enter a number: ")
-    if num % 3 == 0:
-        return True
-    else:
-        pass
+# def three():
+#     thing = input("Enter a number: ")
+    
+#     if thing % 3 == 0:
+#         print("True")
+#     else:
+#         print("False")
 
-
+# three()
 # 9. Import data/time library and print out today’s data and current time
+import time
+
+print(time.ctime())
+
 # 10. write a function that counts how many times the letter a is repeated in a given word (get
 # the work from the user as an input)
+
