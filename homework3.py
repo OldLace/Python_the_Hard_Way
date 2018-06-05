@@ -38,15 +38,33 @@ def square_root():
 
 square_root()
 # 5. write a program that returns the area of a circle with radius r= 9
+import math
+from decimal import Decimal
+
+def circle_area():
+    r = 9
+    area = math.pi * (r * r)
+    area_answer = round(area,2)
+    return area_answer
+
+circle_area()
+
+
+
 # 6. write a boolean function that returns true or false if the letter x is in a string provided by
 # the user
 
-if 
+
 
 # 7. write a boolean function that returns true or false if any of the letter a, e, i, o, u and in a
 # string provided by the user
+
+
+
+
 # 8. Write a boolean function that returns true if a given input is divisible by 3 or return false
 # otherwise
+
 # def three():
 #     thing = input("Enter a number: ")
     
@@ -56,6 +74,9 @@ if
 #         print("False")
 
 # three()
+
+#What did I do wrong here?
+
 # 9. Import data/time library and print out today’s data and current time
 import time
 
