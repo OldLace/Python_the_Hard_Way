@@ -42,6 +42,18 @@ change_to_upper('FUnctionWorks')
 
 # Write a Python program to check whether a string starts with specified characters. 
 
+def string_start():
+    str = input("Please enter a string: ")
+    # str[0] = first
+    if str[0] == 'p':
+        print('The string starts with a p')
+    elif str[0] == 'P':
+        print('The string starts with an uppercase P')
+    else:
+        print('The string does not start with p or P')
+
+string_start()
+
 # Write a Python program to lowercase first n characters in a string. n given by the user
 
 # Write a Python program to swap comma and dot in a string. 
