@@ -11,29 +11,29 @@
 
 
 #####################LIst all the resources you used here ####################
-##########													################## 
+##########	https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3	################## 
 ##########													##################
 ##############################################################################
 
 ################## STRINGS ##################################################
 
 # Write a Python program to calculate the length of a string
-def string_length(string):
-	length = len(string)
-	return length
+def string_length(string): #declare function
+	length = len(string)  #set the length of the string as a variable
+	return length #return the aforementioned variable
 
 # Write a Python function to convert a given string to all uppercase if it contains at least 2 uppercase characters in the first 4 characters
 
 def change_to_upper(str):
   count = 0
   four_count = 0
-  for i in range(len(str[:4])):
-    if str[i] == str[i].upper():
-      count = count + 1
+  for i in range(len(str[:4])):   #loop through the range of the first 4 characters of the string
+    if str[i] == str[i].upper():  #if character is uppercase version of character...
+      count = count + 1   #increase count by 1
     else:
       continue
-    if count >= 2:
-      print(str.upper())
+    if count >= 2:    #Therefore if the count of uppercase letters is 2 or more
+      print(str.upper())  #print the string in uppercase
   
     
 change_to_upper('FUnctionWorks')
@@ -41,25 +41,42 @@ change_to_upper('FUnctionWorks')
 
 
 # Write a Python program to check whether a string starts with specified characters. 
+   
+   #This first version works, but doesn't allow user to select the starting letter
+# def string_start_a():    
+#     str = input("Please enter a string: ")
+#     if str[0] == 'p':
+#         print('The string starts with a p')
+#     elif str[0] == 'P':
+#         print('The string starts with an uppercase P')
+#     else:
+#         print('The string does not start with p or P')
+
+# string_start_a()
 
 def string_start():
-    str = input("Please enter a string: ")
-    # str[0] = first
-    if str[0] == 'p':
-        print('The string starts with a p')
-    elif str[0] == 'P':
-        print('The string starts with an uppercase P')
+    str = input("Please enter a string: ")      #inputted variable for the string
+    letter = input("Enter a single letter: ")  #variable for starting letter of string
+    if str[0] == letter:
+        print('The string starts with ', letter)
+    elif str[0] == letter.upper():
+        print('The string starts with an uppercase ', letter)
     else:
-        print('The string does not start with p or P')
+        print('The string does not start with ', letter)
 
 string_start()
 
+
 # Write a Python program to lowercase first n characters in a string. n given by the user
-def lower(string):   
-    many = int(input('Enter a number: '))
-    nu_string = string[:many].lower()
+
+def lower(string):   #in order for this function to work, I had to include the int() on the following line
+    many = int(input('Enter a number: ')) 
+    nu_string = string[:many].lower()  #nu_string is set to the lowercase of the index of the first :many of characters
     print(nu_string)
-    
+
+
+
+
 # Write a Python program to swap comma and dot in a string. 
 	#Sample string: "32.054,23"
 	#Expected Output: "32,054.23"
