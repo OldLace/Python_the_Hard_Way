@@ -55,10 +55,18 @@ def string_start():
 string_start()
 
 # Write a Python program to lowercase first n characters in a string. n given by the user
-
+def lower(string):   
+    many = int(input('Enter a number: '))
+    nu_string = string[:many].lower()
+    print(nu_string)
+    
 # Write a Python program to swap comma and dot in a string. 
 	#Sample string: "32.054,23"
 	#Expected Output: "32,054.23"
+
+
+
+
 
 # Write a Python program to count and display the vowels of a given text
 
