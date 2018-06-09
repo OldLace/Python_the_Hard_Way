@@ -108,6 +108,15 @@ def cigar_party(cigars, is_weekend):
 	#Current character c position at 8
 
 
+def position():
+    string = input("Please enter some data: ")
+    for i in range(len(string)):
+        print('current character is: ', string[i], 'at position: ', i)
+
+position()
+
+
+
 
 #Given an integer, , perform the following conditional actions:
 
@@ -142,6 +151,15 @@ def cigar_party(cigars, is_weekend):
 
 # Write a Python program to convert a string in a list
 
+def to_list():
+    thisisastring = input("Please enter some data: ")
+    nu_list = []  #declare empty list for later use
+    for i in range(len(thisisastring)):  #loop through the characters of string
+        nu_list.insert(i,thisisastring[i]) #insert each character at position in loop
+       
+    print(nu_list)
+
+to_list()
 
 # Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score.
 	# You are given scores. Store them in a list and find the score of the runner-up.
@@ -153,6 +171,12 @@ def cigar_party(cigars, is_weekend):
 	# '''>>> t = [1, 2, 3, 4]
 	# 			>>> middle(t)
 	# 			[2, 3]'''
+
+def middle(lst):
+    lst.remove(lst[0])
+    lst.remove(lst[-1])
+    return lst
+
 
 
 # Take a list, say for example this one:
