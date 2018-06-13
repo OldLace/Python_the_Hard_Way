@@ -20,6 +20,19 @@ def into_dictionary(string):
 into_dictionary("quick")
 
 print("***************" * 4)
+
+def make_dict(string):
+    the_dict = {}
+    key = 0
+    for val in string:
+        the_dict[key] = val
+        key = key + 1
+    return the_dict
+
+print(make_dict("test"))
+
+
+print("***************" * 4)
 # a. For example: function call with ‘hello’ should print {0: ‘h’, 1:’e’, 2:’l’, 3: ‘l’ , 4:’o’}
 # 3. Write a Python script to check if a given key already exists in a dictionary.
 
