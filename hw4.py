@@ -36,4 +36,11 @@ check_for_key("surname")
 # each value is the kind of animal.
 # i. For example, 'ziggy': 'canary'
 # b. Put at least 3 key-value pairs in your dictionary.
+
+pets = {'Lucky': 'hamster', 'Spot': 'dog', 'Sophia': 'cat', 'Dumbo': 'elephant'}
+
+
 # c. Use a for loop to print out a series of statements such as "Willie is a dog."
+print("******" * 4)
+for i in pets:
+    print(i, "is a", pets[i])
