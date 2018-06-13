@@ -4,22 +4,22 @@
 character = {"name": "Walter", "surname": "White", "nickname": "Isenberg", "height": "6 foot 7", "hobby": "trafficking"}
 
 for i in character:
-    print(character[i])
+    print(i,":", character[i])
 
 # 2. Write a function that takes a string as a parameter and returns a dictionary. The
 # dictionary keys should be numbers from 0 to the length of strings and values should be
 # the characters appeared in the string.
-print("****" * 4)
-# def into_dictionary(string):
-#     for i in range(len(string)):
-#         print({[i]})
-       
-#         # print([i]: string[i])
-#         # print(string[i])
-#         # print({[i] + ":",string[i]})
+print("***************" * 4)
 
-# into_dictionary("quick")
+def into_dictionary(string):
+    string_dict = {}
+    for i in range(len(string)):
+        string_dict.update({i:string[i]})    
+    print(string_dict)
 
+into_dictionary("quick")
+
+print("***************" * 4)
 # a. For example: function call with ‘hello’ should print {0: ‘h’, 1:’e’, 2:’l’, 3: ‘l’ , 4:’o’}
 # 3. Write a Python script to check if a given key already exists in a dictionary.
 
